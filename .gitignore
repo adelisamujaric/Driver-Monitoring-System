@@ -1,0 +1,35 @@
+# Datasets 
+dataset_organized/
+dataset_original/
+
+# Outputs 
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Environment
+.env
+
+# ML modeli - obično su preveliki
+*.h5
+*.pkl
+*.pt
+*.pth
+*.onnx
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

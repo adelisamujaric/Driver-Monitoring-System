@@ -1,0 +1,12 @@
+tensorflow
+keras
+mediapipe
+scikit-learn
+scipy
+opencv-python
+gradio
+matplotlib
+seaborn
+numpy
+pandas
+EOF
