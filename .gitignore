@@ -3,7 +3,7 @@ dataset_organized/
 dataset_original/
 
 # Outputs 
-outputs/
+#outputs/
 
 # Python
 __pycache__/
@@ -17,8 +17,6 @@ venv/
 .env
 
 # ML modeli - obično su preveliki
-*.h5
-*.pkl
 *.pt
 *.pth
 *.onnx
