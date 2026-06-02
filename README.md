@@ -107,7 +107,6 @@ pip install -r requirements.txt
 
 Then start the application:
 
-```bash
 python3 scripts/app.py
 ```
 
