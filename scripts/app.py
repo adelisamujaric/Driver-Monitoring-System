@@ -21,21 +21,21 @@ PRAG_SEKUNDI = 3
 # ============================================================
 
 #Logisticka regresija
-with open("/Users/adelisa/FIT/ML/outputs/driver_model_lr.pkl", "rb") as f:
+with open("outputs/driver_model_lr.pkl", "rb") as f:
     lr_model, lr_scaler = pickle.load(f)
 
 # Random Forest + Scaler
-with open("/Users/adelisa/FIT/ML/outputs/driver_model_rf.pkl", "rb") as f:
+with open("outputs/driver_model_rf.pkl", "rb") as f:
     rf_model, scaler = pickle.load(f)
 
 # CNN model
-cnn_model = load_model("/Users/adelisa/FIT/ML/outputs/driver_model_cnn.h5")
+cnn_model = load_model("outputs/driver_model_cnn.h5")
 
 
 # MediaPipe
 
 base_options = mp_python.BaseOptions(
-    model_asset_path='/Users/adelisa/FIT/ML/face_landmarker.task'
+    model_asset_path='face_landmarker.task'
 )
 options = vision.FaceLandmarkerOptions(
     base_options=base_options,

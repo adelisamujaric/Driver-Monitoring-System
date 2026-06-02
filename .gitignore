@@ -4,6 +4,7 @@ dataset_original/
 
 # Outputs 
 #outputs/
+.gradio/
 
 # Python
 __pycache__/
