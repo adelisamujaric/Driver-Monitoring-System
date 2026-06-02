@@ -105,8 +105,7 @@ cd Driver-Monitoring-System
 # Install dependencies
 pip install -r requirements.txt
 
-Then start the application:
-
+#Then start the application:
 python3 scripts/app.py
 ```
 
