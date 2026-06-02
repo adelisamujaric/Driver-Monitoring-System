@@ -104,10 +104,26 @@ cd Driver-Monitoring-System
 
 # Install dependencies
 pip install -r requirements.txt
+
+Then start the application:
+
+```bash
+python3 scripts/app.py
 ```
 
----
+After startup, copy the link `http://127.0.0.1:7860` and open it in Chrome or Firefox (not in the VS Code built-in browser). Allow camera access when the browser prompts you.
 
+---
+## 🤖 Agent-like Behavior
+
+The Live Camera tab implements a reactive perception-action loop:
+
+- **Perceives:** Each webcam frame (live image of the driver's face)
+- **Decides:** The Random Forest model computes EAR and MAR values from facial landmarks and classifies the driver's state as Alert or Fatigued. If the driver appears fatigued for more than 3 consecutive seconds, an alarm is triggered.
+- **Acts:** Displays a warning overlay on the video feed and plays an audio alarm
+- **Learning:** The model does not learn online — it was pre-trained on images. Adapting to new data requires retraining.
+
+---
 ## Technologies
 
 - **Python**
